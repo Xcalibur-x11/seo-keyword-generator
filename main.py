@@ -10,3 +10,4 @@ async def get_keywords(query: str):
     async with httpx.AsyncClient() as client:
         r = await client.get(url, params=params)
         return r.json()[1]
+
